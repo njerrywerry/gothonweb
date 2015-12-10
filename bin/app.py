@@ -16,7 +16,7 @@ class Index(object):
 class Second(object):
     def GET(self):
         call_me = "My name is Sly"
-        return call_me
+        return render.second(call_me = call_me)
 
 if __name__ == "__main__":
     app.run()
